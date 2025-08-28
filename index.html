@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +41,7 @@
                 </div>
                 <div
                     class="copy-area cursor-pointer w-20 h-10 md:w-28 md:h-12 bg-[#00A63E] flex items-center justify-center rounded-[50px]">
-                    <h3 class="capitalize text-white text-base md:text-xl">0 copy</h3>
+                    <h3 id="copy-count" class="capitalize text-white text-base md:text-xl">0 copy</h3>
                 </div>
             </div>
         </nav>
@@ -73,7 +74,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">All</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black cursor-pointer hover:text-white transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span>
                             </button>
@@ -98,7 +99,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">Police</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button
@@ -121,7 +122,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">Fire</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button
@@ -144,7 +145,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">Health</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button
@@ -167,7 +168,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">Help</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button
@@ -190,7 +191,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">Govt</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button
@@ -213,7 +214,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">Electricity</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button
@@ -236,7 +237,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">NGO</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button
@@ -259,7 +260,7 @@
                                 class="font-normal bg-[#f2f2f2] py-2 px-4 rounded-full text-lg text-[#5c5c5c] mb-6">Travel</button>
                         </div>
                         <div class="service-btn flex justify-between">
-                            <button
+                            <button onclick="clickCopyCount()"
                                 class="bg-white hover:bg-black hover:text-white cursor-pointer transition-all duration-300 text-[#5c5c5c] border-2 border-[#f2f2f2] rounded-lg py-2 w-full mr-2"><i
                                     class="fa-solid fa-copy"></i> <span>Copy</span></button>
                             <button id="call-btn"
@@ -292,21 +293,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-<!-- <div id="historyList" class="history-content flex items-center justify-between bg-[#fafafa] rounded-lg p-4">
-    <div class="call-history">
-        <h4 class="font-semibold text-base text-black">Fire Service Number</h4>
-        <span class="text-[#5c5c5c] text-base">999</span>
-    </div>
-    <div class="call-history-time">
-        <span class="text-black text-sm">11:36:58 AM</span>
-    </div>
-</div> -->

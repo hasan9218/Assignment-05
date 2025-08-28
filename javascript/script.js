@@ -6,6 +6,15 @@ function clickCount() {
     totalCount.innerText = count;
 }
 
+//copy count
+let copyCount = 0;
+let totalCopyCount = document.getElementById("copy-count");
+function clickCopyCount() {
+    copyCount = copyCount + 1;
+    totalCopyCount.innerText = copyCount + " " + "Copy";
+    alert("Number Copied");
+}
+
 
 
 // calling function
