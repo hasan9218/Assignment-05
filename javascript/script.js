@@ -17,15 +17,19 @@ function clickCopyCount() {
 
 // text copy
 
-// const copyBtn = document.querySelector(".copy-btn");
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelector(".grid").addEventListener("click", function (e) {
+    var btn = e.target.closest(".copy-btn");
+    if (!btn) return;
 
-// function copyNumber() {
-//   const el = document.querySelector(".copy-number");
-//   navigator.clipboard.writeText(`${el.innerText}`);
-// }
+    var el = btn.closest(".service-item")?.querySelector(".copy-number");
+    if (!el) return;
 
-// copyBtn.addEventListener("click", copyNumber);
+    navigator.clipboard.writeText(el.innerText);
 
+    console.log("Copied:", el.innerText);
+  });
+});
 
 
 // calling function
