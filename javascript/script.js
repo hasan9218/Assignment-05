@@ -15,6 +15,17 @@ function clickCopyCount() {
     alert("Number Copied");
 }
 
+// text copy
+
+// const copyBtn = document.querySelector(".copy-btn");
+
+// function copyNumber() {
+//   const el = document.querySelector(".copy-number");
+//   navigator.clipboard.writeText(`${el.innerText}`);
+// }
+
+// copyBtn.addEventListener("click", copyNumber);
+
 
 
 // calling function
@@ -29,6 +40,12 @@ for (let btn of callButton) {
 
         let serviceName = singleItem.querySelector(".service-text p").innerText;
         let serviceNumber = singleItem.querySelector(".service-text span").innerText;
+
+        // coin count
+        if (coins < 20) {
+            alert("Your Coin Is Over, You Need 20 Coin for Call");
+            return;
+        }
 
         // calling history add
         const callHistoryContainer = document.getElementById("call-history-container");
@@ -54,11 +71,7 @@ for (let btn of callButton) {
         });
 
 
-        // coin count
-        if (coins < 20) {
-            alert("Your Coin Is Over, You Need 20 Coin for Call");
-            return;
-        }
+        
         alert(`Calling ${serviceName} ${serviceNumber}`);
 
         coins = coins - 20;
