@@ -17,18 +17,14 @@ function clickCopyCount() {
 
 // text copy
 
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelector(".grid").addEventListener("click", function (e) {
-    var btn = e.target.closest(".copy-btn");
+document.querySelector(".grid").addEventListener("click", function (click) {
+    var btn = click.target.closest(".copy-btn");
     if (!btn) return;
 
-    var el = btn.closest(".service-item")?.querySelector(".copy-number");
-    if (!el) return;
+    var copyText = btn.closest(".service-item")?.querySelector(".copy-number");
+    if (!copyText) return;
 
-    navigator.clipboard.writeText(el.innerText);
-
-    console.log("Copied:", el.innerText);
-  });
+    navigator.clipboard.writeText(copyText.innerText);
 });
 
 
@@ -75,7 +71,7 @@ for (let btn of callButton) {
         });
 
 
-        
+
         alert(`Calling ${serviceName} ${serviceNumber}`);
 
         coins = coins - 20;
